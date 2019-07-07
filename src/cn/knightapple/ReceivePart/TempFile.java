@@ -19,17 +19,16 @@ public class TempFile {
     private String dateModified;
     //远程文件的更新时间，防文件源修改
     private String updateTime;
-    //目标文件的临时文件
-    private File tempFileTo;
-    //    private String updateTimeOnOpen;
+    //最开始的文件更新时间
+//    private String updateTimeOnOpen;
     //当前下标
     private String currentIndex;
     private static final Logger LOG = Logger.getLogger(TempFile.class.getName());
 
-    public TempFile() {
+    public TempFile()
+    {
         currentIndex = "0";
     }
-
     @Override
     public String toString() {
         return "fileFrom::" + fileFrom
@@ -46,10 +45,10 @@ public class TempFile {
                 && preCheckMessageImp.getFileTotalSize().equals(totalSize)
                 && preCheckMessageImp.getUpdateTime().equals(updateTime)
 //                && dateModified != "null"
-                && tempFileTo.lastModified() <= Long.parseLong(dateModified)
-        ) {
+//                && new File(fileTo).lastModified() < Long.parseLong(dateModified)
+        ){
             return true;
-        } else {
+        } else{
             return false;
         }
     }
@@ -62,11 +61,10 @@ public class TempFile {
 
     //获取临时目录
     private File getTempFile() {
-        if (tempFileTo == null) {
-            tempFileTo = new File(fileTo);
-        }
-        String fileName = tempFileTo.getName();
-        return new File(tempFileTo.getParent() + File.separator + fileName + ".temp");
+        File temp = new File(fileTo);
+
+        String fileName = temp.getName();
+        return new File(new File(fileTo).getParent() + File.separator + fileName + ".temp");
     }
 
     //重置文件下载进度

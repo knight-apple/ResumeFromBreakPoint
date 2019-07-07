@@ -78,6 +78,9 @@ public class Receiver {
                     if (tempFile.getFileTo() == null) {
                         tempFile.setFileTo(fileNameTo);
                     }
+                    fileWriter = new FileWriter(new File(fileNameTo),
+                            Long.parseLong(((PreCheckMessageImp) message).getFileTotalSize()),
+                            Integer.parseInt(ConfigReader.getPropertie("sliceMaxSize")));
                     if (tempFile.checkDirExists()) {
                         tempFile.readFromTemp();
                         if (!tempFile.isLatestFile(preMessage)) {
@@ -87,9 +90,6 @@ public class Receiver {
                     } else {
                         throw new FileNotFoundException("该目录不存在");
                     }
-                    fileWriter = new FileWriter(new File(fileNameTo),
-                            Long.parseLong(((PreCheckMessageImp) message).getFileTotalSize()),
-                            Integer.parseInt(ConfigReader.getPropertie("sliceMaxSize")));
                     sendRequest(tempFile, os);
                     break;
                 case "slice":
