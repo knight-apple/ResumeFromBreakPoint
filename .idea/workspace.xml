@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4186c22b-2d82-4e13-9a63-54224f1b2015" name="Default Changelist" comment="" />
+    <list default="true" id="4186c22b-2d82-4e13-9a63-54224f1b2015" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/knightapple/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/knightapple/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,22 +29,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/TempFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="247">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#734#735#0" expanded="true" />
-                <element signature="e#5027#5028#0" expanded="true" />
-                <element signature="e#5131#5132#0" expanded="true" />
-                <element signature="e#5219#5220#0" expanded="true" />
-                <element signature="e#5299#5300#0" expanded="true" />
-                <element signature="e#5391#5392#0" expanded="true" />
-                <element signature="e#5478#5479#0" expanded="true" />
-                <element signature="e#5552#5553#0" expanded="true" />
-                <element signature="e#5618#5619#0" expanded="true" />
-                <element signature="e#5680#5681#0" expanded="true" />
-                <element signature="e#5748#5749#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,8 +54,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="171">
-                <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <first_editor relative-caret-position="464">
+                <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
                 <folding>
                   <element signature="imports" expanded="true" />
                 </folding>
@@ -76,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-347">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="381">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#953#954#0" expanded="true" />
@@ -92,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/Receiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="158">
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5687#5688#0" expanded="true" />
@@ -106,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="763" column="28" lean-forward="true" selection-start-line="763" selection-start-column="28" selection-end-line="763" selection-end-column="28" />
+            <state relative-caret-position="497">
+              <caret line="747" column="19" selection-start-line="747" selection-start-column="19" selection-end-line="747" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -115,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/knightapple/tools/MessageResolve.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
-              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="364">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -178,19 +170,10 @@
       <find>blockIndex</find>
       <find>currentR</find>
       <find>File(</find>
-      <find>File</find>
-      <find>fileTo</find>
       <find>encrypt</find>
-      <find>\bFile()</find>
-      <find>writer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Knight Apple &lt;31281915+knight-apple@users.noreply.github.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -210,15 +193,15 @@
         <option value="$PROJECT_DIR$/src/cn/tools/ConfigReader.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/MessagePart/SliceMessageImp.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/tools/MessageResolve.java" />
+        <option value="$PROJECT_DIR$/src/cn/knightapple/ReceivePart/TempFile.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/RfbpSocket.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/ReciveSocket.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/config.properties" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/tools/DESCryptography.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/Main.java" />
+        <option value="$PROJECT_DIR$/src/cn/knightapple/ReceivePart/Receiver.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/MessagePart/PreCheckMessageImp.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java" />
-        <option value="$PROJECT_DIR$/src/cn/knightapple/ReceivePart/Receiver.java" />
-        <option value="$PROJECT_DIR$/src/cn/knightapple/ReceivePart/TempFile.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -441,20 +424,12 @@
       <workItem from="1562311596261" duration="632000" />
       <workItem from="1562314029331" duration="14603000" />
       <workItem from="1562389224651" duration="30321000" />
-      <workItem from="1562481704036" duration="15649000" />
+      <workItem from="1562481704036" duration="13475000" />
     </task>
-    <task id="LOCAL-00001" summary="添加源文件和目标文件防篡改机制">
-      <created>1562501201515</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1562501201515</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99951000" />
+    <option name="totallyTimeSpent" value="97777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -467,6 +442,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7159864" visible="true" weight="0.13859275" />
       <window_info id="Structure" order="1" sideWeight="0.2840136" side_tool="true" weight="0.13859275" />
@@ -477,8 +453,8 @@
       <window_info id="Favorites" order="6" sideWeight="0.501548" side_tool="true" weight="0.1369936" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4936034" weight="0.42203742" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4946695" visible="true" weight="0.38877338" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4936034" visible="true" weight="0.42203742" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4946695" weight="0.38877338" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
@@ -541,10 +517,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加源文件和目标文件防篡改机制" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加源文件和目标文件防篡改机制" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -591,22 +563,34 @@
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/TempFile.java</url>
-          <line>44</line>
+          <url>file://$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java</url>
+          <line>59</line>
           <properties />
-          <option name="timeStamp" value="129" />
+          <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/Receiver.java</url>
-          <line>81</line>
+          <line>109</line>
           <properties />
-          <option name="timeStamp" value="132" />
+          <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/TempFile.java</url>
-          <line>64</line>
+          <url>file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/Receiver.java</url>
+          <line>98</line>
           <properties />
-          <option name="timeStamp" value="133" />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="127" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -619,28 +603,11 @@
         <watch expression="content.getBytes().equals(decrypted)" language="JAVA" />
         <watch expression="result.length" language="JAVA" />
         <watch expression="content.length" language="JAVA" />
-        <watch expression="temp" language="JAVA" />
-        <watch expression="tempFileTo.lastModified()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
-      <expression>
-        <expression-string>tempFileTo.lastModified()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>temp</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new File(fileTo).lastModified()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
       <expression>
         <expression-string>content.length</expression-string>
         <language-id>JAVA</language-id>
@@ -672,7 +639,22 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
+        <expression-string>new File(fileTo).lastModified()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>dateModified</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Integer.parseInt(tempFile.getTotalSize()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Integer.parseInt(tempFile.getCurrentIndex()) * Integer.parseInt(ConfigReader.getPropertie(&quot;sliceMaxSize&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -841,6 +823,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/SendPart/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="747" column="19" selection-start-line="747" selection-start-column="19" selection-end-line="747" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/knightapple/tools/DESCryptography.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -848,6 +844,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/tools/MessageResolve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
@@ -862,17 +865,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/SendPart/FileReader.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/TempFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/tools/MessageResolve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="247">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -888,8 +887,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-347">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="381">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#953#954#0" expanded="true" />
@@ -902,8 +901,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/Receiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="158">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5687#5688#0" expanded="true" />
@@ -912,40 +911,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/TempFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#5027#5028#0" expanded="true" />
-            <element signature="e#5131#5132#0" expanded="true" />
-            <element signature="e#5219#5220#0" expanded="true" />
-            <element signature="e#5299#5300#0" expanded="true" />
-            <element signature="e#5391#5392#0" expanded="true" />
-            <element signature="e#5478#5479#0" expanded="true" />
-            <element signature="e#5552#5553#0" expanded="true" />
-            <element signature="e#5618#5619#0" expanded="true" />
-            <element signature="e#5680#5681#0" expanded="true" />
-            <element signature="e#5748#5749#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="763" column="28" lean-forward="true" selection-start-line="763" selection-start-column="28" selection-end-line="763" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="171">
-            <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <first_editor relative-caret-position="464">
+            <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
             <folding>
               <element signature="imports" expanded="true" />
             </folding>
