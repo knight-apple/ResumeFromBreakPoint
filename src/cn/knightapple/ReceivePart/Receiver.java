@@ -5,6 +5,7 @@ import cn.knightapple.MessagePart.PreCheckMessageImp;
 import cn.knightapple.MessagePart.RequestMessageImp;
 import cn.knightapple.MessagePart.SliceMessageImp;
 import cn.knightapple.tools.ConfigReader;
+import cn.knightapple.tools.DESCryptography;
 import cn.knightapple.tools.MessageResolve;
 
 import java.io.*;
@@ -18,52 +19,48 @@ public class Receiver {
     private boolean toggle;
     private ConfigReader configReader;
     private TempFile tempFile;
+    private boolean encryption;
 
     public Receiver(ServerSocket serverSocket) {
         this.serverSocket = serverSocket;
         configReader = new ConfigReader();
+        encryption = false;
     }
 
     public Receiver(Integer port) throws IOException {
         this.serverSocket = new ServerSocket(port);
         configReader = new ConfigReader();
+        encryption = false;
     }
 
     public Receiver() throws IOException {
         this.serverSocket = new ServerSocket();
         configReader = new ConfigReader();
-    }
-
-    public void bind(SocketAddress endPoint) throws IOException {
-        serverSocket.bind(endPoint);
-    }
-
-    public void bind(SocketAddress endPoint, int backLog) throws IOException {
-        serverSocket.bind(endPoint, backLog);
+        encryption = false;
     }
 
     public long currentReceivedSize() {
         if (tempFile == null) {
             return 0;
-        }else {
+        } else {
             return Long.parseLong(tempFile.getCurrentIndex()) * Long.parseLong(ConfigReader.getPropertie("sliceMaxSize"));
         }
     }
-    public long totalFileSize()
-    {
-        if(tempFile!=null&&tempFile.getTotalSize()!=null)
-        {
+
+    public long totalFileSize() {
+        if (tempFile != null && tempFile.getTotalSize() != null) {
             return Long.parseLong(tempFile.getTotalSize());
-        }else {
+        } else {
             return 0;
         }
     }
+
     public void accept() throws IOException {
         if (fileNameTo == null || serverSocket == null) {
             throw new IOException("未设置serverSocket或fileNameTo");
         }
         Socket socket = serverSocket.accept();
-        BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()),Integer.parseInt(ConfigReader.getPropertie("sliceMaxSize"))*2);
+        BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()), Integer.parseInt(ConfigReader.getPropertie("sliceMaxSize")) * 2);
         OutputStream os = socket.getOutputStream();
         FileWriter fileWriter = null;
         tempFile = new TempFile();
@@ -73,6 +70,11 @@ public class Receiver {
             switch (message.getContentType()) {
                 case "preCheck":
                     PreCheckMessageImp preMessage = ((PreCheckMessageImp) message);
+                    if (preMessage.isEncryp()) {
+                        encryption = true;
+                    } else {
+                        encryption = false;
+                    }
                     if (tempFile.getFileTo() == null) {
                         tempFile.setFileTo(fileNameTo);
                     }
@@ -97,21 +99,19 @@ public class Receiver {
                     SliceMessageImp sliceMessageImp = (SliceMessageImp) message;
                     long index = Long.parseLong(sliceMessageImp.getBlockIndex());
                     int size = Integer.parseInt(sliceMessageImp.getThisBlockSize());
-//                    size=40;
                     char[] charData = new char[size];
-//                    System.out.println(socket.getInputStream().available());
-//                    br.read(charData, 0, size);
-                    byte[] data = new byte[charData.length];
+                    byte[] data = new byte[size];
                     char[] temp = new char[1];
-                    for (int i = 0; i < charData.length; i++) {
+                    for (int i = 0; i < size; i++) {
                         br.read(temp);
-                        data[i] = (byte)temp[0];
-//                        data[i] = (byte) charData[i];
+                        data[i] = (byte) temp[0];
                     }
+                    if (encryption) {
+                        data = DESCryptography.DES_CBC_Decrypt(data);
+                    }
+
                     fileWriter.push(index, data);
                     tempFile.increIndex();
-//                    System.out.println(tempFile.getCurrentIndex());
-//                    System.out.println("+1");
                     sendRequest(tempFile, os);
                     break;
                 default:

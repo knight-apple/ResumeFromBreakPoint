@@ -23,7 +23,7 @@ public class Main {
 
         Socket socket = new Socket("localhost", 12345);
         Sender sender = new Sender(socket, "E:\\奖学金资料\\2017-2018学年综测加分-团学20180918.rar");
-
+        sender.setEncryp();
         Thread send = new Thread(() -> {
             try {
                 sender.send();

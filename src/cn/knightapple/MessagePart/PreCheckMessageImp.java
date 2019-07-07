@@ -5,10 +5,12 @@ public class PreCheckMessageImp extends Message {
     //    private String fileNameTo;
     private String fileTotalSize;
     private String updateTime;
+    private String encryption;
 
     public PreCheckMessageImp() {
-        lines = "3";
+        lines = "4";
         contentType = "preCheck";
+        encryption = "unencryp";
     }
 
     @Override
@@ -19,7 +21,8 @@ public class PreCheckMessageImp extends Message {
 //                + "\r\nfileNameTo::" + fileNameTo
                 + "\r\nfileTotalSize::" + fileTotalSize
                 + "\r\nupdateTime::" + updateTime
-                +"\r\n";
+                + "\r\nencryption::" + encryption
+                + "\r\n";
     }
 
     @Override
@@ -40,10 +43,36 @@ public class PreCheckMessageImp extends Message {
                 case "updateTime":
                     setUpdateTime(temp[1]);
                     break;
+                case "encryption":
+                    setEncryption(temp[1]);
+
                 default:
                     break;
             }
         }
+    }
+
+    public void encryp() {
+        encryption = "encryp";
+    }
+    public void unEncryp()
+    {
+        encryption = "unencryp";
+    }
+    public boolean isEncryp() {
+        if (encryption.equals("encryp")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void setEncryption(String encryption) {
+        this.encryption = encryption;
+    }
+
+    public String getEncryption() {
+        return encryption;
     }
 
     public void setFileNameFrom(String fileNameFrom) {
