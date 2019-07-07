@@ -5,7 +5,10 @@ import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
-
+/**
+ * @author kngihtapple
+ * @version 1.1
+ */
 public class DESCryptography {
     public static void main(String[] args) {
 

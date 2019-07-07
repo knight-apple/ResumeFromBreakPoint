@@ -1,7 +1,10 @@
 package cn.knightapple.SendPart;
 
 import java.io.*;
-
+/**
+ * @author kngihtapple
+ * @version 1.1
+ */
 public class FileReader {
     private RandomAccessFile randomAccessFile;
 

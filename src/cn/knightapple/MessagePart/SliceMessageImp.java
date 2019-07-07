@@ -1,5 +1,8 @@
 package cn.knightapple.MessagePart;
-
+/**
+ * @author kngihtapple
+ * @version 1.1
+ */
 public class SliceMessageImp extends Message {
     private String thisBlockSize;
     private String blockIndex;

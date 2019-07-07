@@ -4,7 +4,10 @@ import java.io.*;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Properties;
-
+/**
+ * @author kngihtapple
+ * @version 1.1
+ */
 public class ConfigReader {
     private static Properties properties;
     private static Properties systemProperty;

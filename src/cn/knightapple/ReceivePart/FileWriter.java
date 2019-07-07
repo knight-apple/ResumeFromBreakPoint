@@ -1,5 +1,8 @@
 package cn.knightapple.ReceivePart;
-
+/**
+ * @author kngihtapple
+ * @version 1.1
+ */
 import java.io.*;
 
 public class FileWriter {

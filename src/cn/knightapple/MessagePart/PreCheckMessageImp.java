@@ -1,5 +1,8 @@
 package cn.knightapple.MessagePart;
-
+/**
+ * @author kngihtapple
+ * @version 1.1
+ */
 public class PreCheckMessageImp extends Message {
     private String fileNameFrom;
     //    private String fileNameTo;

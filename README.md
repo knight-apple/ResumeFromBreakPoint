@@ -7,7 +7,7 @@
 ## 概览
 
 - [x] 使用Java原生的Socket实现文件的断点续传功能。
-- [ ] 支持源文件与临时下载文件防篡改。
+- [x] 支持源文件与临时下载文件防篡改。
 - [x] DES加密传输文件块。
 - [x] 临时文件将自动删除。
 - [ ] 轻松调用，配备丰富文档。
@@ -29,9 +29,7 @@
 
 #### 创建接收端实例
 
-接收时需要使用Receiver类
-
-操作同上
+接收时需要使用Receiver类，导入该类
 
 ```java
 import cn.knightapple.ReceivePart.Receiver;
@@ -40,8 +38,9 @@ import cn.knightapple.ReceivePart.Receiver;
 然后创建Receiver实例
 
 ```java
-Receiver receiver = new Receiver(12345);
-receiver.setFileNameTo("请输入接收的文件所在的地址");
+ServerSocket serverSocket = new ServerSocket("12345");
+Receiver receiver = new Receiver(serverSocket.accept());
+receiver.setFileTo("请输入接收的文件所在的地址");
 ```
 
 
@@ -109,8 +108,18 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
-        Receiver receiver = new Receiver(12345);
-        receiver.setFileNameTo("D:\\Source.test");
+		//创建Socket连接
+        ServerSocket serverSocket = new ServerSocket(12345);
+        Socket sendSocket = new Socket("localhost", 12345);
+        
+        //创建接收端实例
+        Receiver receiver = new Receiver(serverSocket.accept());
+        receiver.setFileTo("D:\\Source.test");
+ 
+       	//创建发送端实例
+        Sender sender = new Sender(socket, "D:\\Target.test");
+
+        //创建接收线程
         Thread revd = new Thread(() -> {
             try {
                 receiver.accept();
@@ -119,25 +128,30 @@ public class Main {
             }
         });
 
-        Socket socket = new Socket("localhost", 12345);
-        Sender sender = new Sender(socket, "D:\\Target.test");
-
+        //创建发送线程
         Thread send = new Thread(() -> {
             try {
                 sender.send();
             } catch (IOException e) {
                 e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
+        	});
+            
+        //打印初始状态
         System.out.println(
             System.currentTimeMillis() 
             + "  " 
             + receiver.currentReceivedSize());
+        
+        //设置发送开始时间
         Long start = System.currentTimeMillis();
+        
+        //开始接收
         revd.start();
+            
+	    //开始发送
         send.start();
+            
+        //定时打印进度
         while (revd.isAlive()) {
        	System.out.println(
             new Date(System.currentTimeMillis()) + "  " 
@@ -145,13 +159,16 @@ public class Main {
             +readableFileSize(receiver.totalFileSize()));
             TimeUnit.MILLISECONDS.sleep(1000);
         }
+        
+        //获取结束时间
         Long end = System.currentTimeMillis();
 		System.out.println(
              new Date(System.currentTimeMillis()-start).getSeconds()
              + "  " + readableFileSize(receiver.currentReceivedSize())
              +" / "+readableFileSize(receiver.totalFileSize()));
     }
-
+	
+	//转换文件大小为可读形式                                 
     public static String readableFileSize(long size) {
         if (size <= 0) {
             return "0";
@@ -196,6 +213,14 @@ DownLoad Rate:8.3 MB/S
 * 所使用的创建发送实例和接收实例时的socket请勿同时用于其他传输功能。
 * 试运行本项目提供的测试代码时，请保证Java版本在1.8以上。
 * config.properties中的sliceMaxSize属性可自行修改，过大可能会导致IO时间过长，影响传输速度。
+
+
+
+## 原理
+
+
+
+
 
 ## 许可
 

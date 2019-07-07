@@ -1,5 +1,8 @@
 package cn.knightapple.MessagePart;
-
+/**
+ * @author kngihtapple
+ * @version 1.1
+ */
 public class RequestMessageImp extends Message {
     private String nextBlockIndex;
     private String maxBlockSize;

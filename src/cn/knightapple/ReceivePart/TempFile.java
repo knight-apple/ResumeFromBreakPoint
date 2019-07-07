@@ -7,7 +7,10 @@ import java.io.*;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.logging.Logger;
-
+/**
+ * @author kngihtapple
+ * @version 1.1
+ */
 public class TempFile {
     //文件来源
     private String fileFrom;

@@ -6,7 +6,10 @@ import cn.knightapple.MessagePart.RequestMessageImp;
 import cn.knightapple.MessagePart.SliceMessageImp;
 
 import java.io.*;
-
+/**
+ * @author kngihtapple
+ * @version 1.1
+ */
 public class MessageResolve {
     public static Message getMessage(BufferedReader br) throws IOException {
         String data = "";

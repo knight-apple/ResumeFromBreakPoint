@@ -4,6 +4,7 @@ import cn.knightapple.ReceivePart.Receiver;
 import cn.knightapple.SendPart.Sender;
 
 import java.io.IOException;
+import java.net.ServerSocket;
 import java.net.Socket;
 import java.text.DecimalFormat;
 import java.util.Date;
@@ -11,32 +12,34 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
-        Receiver receiver = new Receiver(12345);
-        receiver.setFileNameTo("E:\\奖学金资料\\2017-2018学年综测加分-团学.rar");
+        ServerSocket serverSocket = new ServerSocket(12345);
+        Socket sendSocket = new Socket("localhost", 12345);
+
+        Receiver receiver = new Receiver(serverSocket.accept());
+
+
         Thread revd = new Thread(() -> {
             try {
+                receiver.setFileTo("E:\\奖学金资料\\2017-2018学年综测加分-团学.rar");
                 receiver.accept();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         });
 
-        Socket socket = new Socket("localhost", 12345);
-        Sender sender = new Sender(socket, "E:\\奖学金资料\\2017-2018学年综测加分-团学20180918.rar");
+        Sender sender = new Sender(sendSocket, "E:\\奖学金资料\\2017-2018学年综测加分-团学20180918.rar");
         sender.setEncrypt();
         Thread send = new Thread(() -> {
             try {
                 sender.send();
             } catch (IOException e) {
                 e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
             }
         });
         System.out.println(System.currentTimeMillis() + "  " + receiver.currentReceivedSize());
         Long start = System.currentTimeMillis();
-        revd.start();
         send.start();
+        revd.start();
         while (revd.isAlive()) {
             System.out.println(
                     new Date(System.currentTimeMillis()-start).getSeconds()
