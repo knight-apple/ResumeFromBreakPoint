@@ -1,11 +1,13 @@
 # ResumeFromBreakPointForJava
 
+[![Java]( )](<https://www.oracle.com/technetwork/java/javase/documentation/jdk8-doc-downloads-2133158.html> )
+
 > #### 基于Java的断点续传中间件
 
 ## 概览
 
 - [x] 使用Java原生的Socket实现文件的断点续传功能。
-- [x] 支持源文件与临时下载文件防篡改。
+- [ ] 支持源文件与临时下载文件防篡改。
 - [ ] 采用随机盐加密传输文件块。
 - [x] 临时文件将自动删除。
 - [ ] 轻松调用，配备丰富文档。
@@ -13,7 +15,7 @@
 
 ## 下载
 
-
+[ResumeFromBreakPointForJava1.0 ](https://github.com/knight-apple/ResumeFromBreakPoint/releases/download/1.0/ResumeFromBreakPoint.jar )
 
 ## 使用
 

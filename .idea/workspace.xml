@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4186c22b-2d82-4e13-9a63-54224f1b2015" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/发送方来源文件地址" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/接收方目标文件地址" beforeDir="false" />
-    </list>
+    <list default="true" id="4186c22b-2d82-4e13-9a63-54224f1b2015" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="117" />
     <option name="y" value="26" />
     <option name="width" value="1940" />
@@ -412,12 +409,12 @@
       <workItem from="1562311596261" duration="632000" />
       <workItem from="1562314029331" duration="14603000" />
       <workItem from="1562389224651" duration="30321000" />
-      <workItem from="1562481704036" duration="5676000" />
+      <workItem from="1562481704036" duration="6053000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89978000" />
+    <option name="totallyTimeSpent" value="90355000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,7 +426,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.71582735" visible="true" weight="0.13859275" />
       <window_info id="Structure" order="1" sideWeight="0.28417265" side_tool="true" visible="true" weight="0.13859275" />

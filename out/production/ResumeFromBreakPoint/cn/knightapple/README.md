@@ -4,12 +4,12 @@
 
 ## 概览
 
-* 使用Java原生的Socket实现文件的断点续传功能。
-* 支持源文件与临时下载文件防篡改。
-* 支持文件传输加密。
-* 临时文件将自动删除。
-* 轻松调用，配备丰富文档。
-* 单文件块默认为64KB，机械硬盘传输最高可达8MB/S
+- [x] 使用Java原生的Socket实现文件的断点续传功能。
+- [x] 支持源文件与临时下载文件防篡改。
+- [ ] 采用随机盐加密传输文件块。
+- [x] 临时文件将自动删除。
+- [ ] 轻松调用，配备丰富文档。
+- [x] 单文件块默认为64KB，机械硬盘传输最高可达8MB/S
 
 ## 下载
 
@@ -17,7 +17,9 @@
 
 ## 使用
 
-本中间件的断点续传需要调用两个类，发别用来发送和接收。*
+本中间件的断点续传需要调用两个类，发别用来发送和接收。
+
+请下载并将本jar包放入lib目录中
 
 
 
@@ -58,8 +60,6 @@ import cn.knightapple.SendPart.Sender;
 Socket socket = new Socket("localhost", 12345);
 Sender sender = new Sender(socket, "请输入要发送的文件所在地址"); 
 ```
-
-**注意：所使用的socket请勿同时用与其他传输功能。**
 
 
 
@@ -138,11 +138,10 @@ public class Main {
             TimeUnit.MILLISECONDS.sleep(1000);
         }
         Long end = System.currentTimeMillis();
-        System.out.println("DownLoad Rate:" 
-        + readableFileSize(
-        receiver.currentReceivedSize() 
-        / new Date(end - start).getSeconds())
-        + "/S");
+		System.out.println(
+             new Date(System.currentTimeMillis()-start).getSeconds()
+             + "  " + readableFileSize(receiver.currentReceivedSize())
+             +" / "+readableFileSize(receiver.totalFileSize()));
     }
 
     public static String readableFileSize(long size) {
@@ -161,6 +160,35 @@ public class Main {
 
 #### 运行效果
 
+````
+1  8.1 MB / 149.5 MB
+2  17.3 MB / 149.5 MB
+3  25.8 MB / 149.5 MB
+4  34.9 MB / 149.5 MB
+5  42.8 MB / 149.5 MB
+6  51.4 MB / 149.5 MB
+7  60.1 MB / 149.5 MB
+8  68.3 MB / 149.5 MB
+9  74.7 MB / 149.5 MB
+10  83.1 MB / 149.5 MB
+11  92.9 MB / 149.5 MB
+12  102.2 MB / 149.5 MB
+13  112.1 MB / 149.5 MB
+14  121.8 MB / 149.5 MB
+15  132.5 MB / 149.5 MB
+16  139.9 MB / 149.5 MB
+17  148.4 MB / 149.5 MB
+DownLoad Rate:8.3 MB/S
+````
 
+
+
+##  注意
+
+* 所使用的创建发送实例和接收实例时的socket请勿同时用于其他传输功能。
+* 试运行本项目提供的测试代码时，请保证Java版本在1.8以上。
+* config.properties中的sliceMaxSize属性可自行修改，过大可能会导致IO时间过长，影响传输速度。
 
 ## 许可
+
+The [MIT](http://opensource.org/licenses/MIT) License
