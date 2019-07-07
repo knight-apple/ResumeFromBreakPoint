@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+            <state relative-caret-position="171">
+              <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="117" />
     <option name="y" value="26" />
     <option name="width" value="1940" />
@@ -409,12 +409,12 @@
       <workItem from="1562311596261" duration="632000" />
       <workItem from="1562314029331" duration="14603000" />
       <workItem from="1562389224651" duration="30321000" />
-      <workItem from="1562481704036" duration="6053000" />
+      <workItem from="1562481704036" duration="6770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90355000" />
+    <option name="totallyTimeSpent" value="91072000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,9 +427,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.71582735" visible="true" weight="0.13859275" />
-      <window_info id="Structure" order="1" sideWeight="0.28417265" side_tool="true" visible="true" weight="0.13859275" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7156105" visible="true" weight="0.13859275" />
+      <window_info id="Structure" order="1" sideWeight="0.2843895" side_tool="true" visible="true" weight="0.13859275" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -437,7 +438,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.501548" side_tool="true" weight="0.1369936" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49413645" visible="true" weight="0.42203742" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49413645" weight="0.42203742" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49626866" weight="0.3894081" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -445,8 +446,8 @@
       <window_info anchor="bottom" id="REST Client" order="7" weight="0.32917964" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50586355" side_tool="true" visible="true" weight="0.42203742" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49520257" weight="0.3281412" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5053305" side_tool="true" visible="true" weight="0.32744282" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.4946695" visible="true" weight="0.32744282" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Stack trace to UML" order="14" side_tool="true" />
@@ -858,8 +859,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        <state relative-caret-position="171">
+          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
