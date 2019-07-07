@@ -8,7 +8,7 @@
 
 - [x] 使用Java原生的Socket实现文件的断点续传功能。
 - [ ] 支持源文件与临时下载文件防篡改。
-- [ ] 加密传输文件块。
+- [x] DES加密传输文件块。
 - [x] 临时文件将自动删除。
 - [ ] 轻松调用，配备丰富文档。
 - [x] 单文件块默认为64KB，机械硬盘传输最高可达8MB/S
@@ -33,13 +33,13 @@
 
 操作同上
 
-```
+```java
 import cn.knightapple.ReceivePart.Receiver;
 ```
 
 然后创建Receiver实例
 
-```
+```java
 Receiver receiver = new Receiver(12345);
 receiver.setFileNameTo("请输入接收的文件所在的地址");
 ```
@@ -52,7 +52,7 @@ receiver.setFileNameTo("请输入接收的文件所在的地址");
 
 首先导入该类
 
-```
+```java
 import cn.knightapple.SendPart.Sender;
 ```
 
@@ -63,7 +63,13 @@ Socket socket = new Socket("localhost", 12345);
 Sender sender = new Sender(socket, "请输入要发送的文件所在地址"); 
 ```
 
-
+#### 加密传输
+默认采用非加密传输，若希望采用加密传输则调用Sender的setEncrypt方法
+也可显式得调用setUnEncrypt来设置非加密传输
+````java
+socket.setEncrypt();
+socket.setUnEncrypt();
+````
 
 #### 发送
 
@@ -71,13 +77,13 @@ Sender sender = new Sender(socket, "请输入要发送的文件所在地址");
 
 接收端代码如下：
 
-````
+````java
 receiver.accept();
 ````
 
 发送端代码如下：
 
-````
+````java
 sender.send();
 ````
 

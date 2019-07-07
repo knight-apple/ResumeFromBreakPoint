@@ -7,19 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4186c22b-2d82-4e13-9a63-54224f1b2015" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/knightapple/tools/DESCryptography.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ResumeFromBreakPoint/cn/knightapple/README.assets/1562486106856.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ResumeFromBreakPoint/cn/knightapple/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/knightapple/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/knightapple/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/knightapple/MessagePart/PreCheckMessageImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/knightapple/MessagePart/PreCheckMessageImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/knightapple/README.assets/1562486106856.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/knightapple/ReceivePart/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/knightapple/ReceivePart/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/knightapple/ReciveSocket.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/knightapple/SendSocket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/knightapple/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/knightapple/config.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/knightapple/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="342">
+              <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,14 +51,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="464">
+                <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+                <folding>
+                  <element signature="imports" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+            <state relative-caret-position="381">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#953#954#0" expanded="true" />
                 <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1037#1038#0" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/Receiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="158">
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5687#5688#0" expanded="true" />
@@ -100,8 +107,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/knightapple/tools/MessageResolve.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
+            <state relative-caret-position="364">
               <caret line="42" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/knightapple/MessagePart/PreCheckMessageImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding>
+                <element signature="e#1733#1734#0" expanded="true" />
+                <element signature="e#1772#1773#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,24 +143,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/FileWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/knightapple/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -168,6 +170,7 @@
       <find>blockIndex</find>
       <find>currentR</find>
       <find>File(</find>
+      <find>encrypt</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,11 +197,12 @@
         <option value="$PROJECT_DIR$/src/cn/knightapple/RfbpSocket.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/ReciveSocket.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/config.properties" />
-        <option value="$PROJECT_DIR$/src/cn/knightapple/MessagePart/PreCheckMessageImp.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/tools/DESCryptography.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/Main.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/ReceivePart/Receiver.java" />
+        <option value="$PROJECT_DIR$/src/cn/knightapple/MessagePart/PreCheckMessageImp.java" />
         <option value="$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -420,12 +424,12 @@
       <workItem from="1562311596261" duration="632000" />
       <workItem from="1562314029331" duration="14603000" />
       <workItem from="1562389224651" duration="30321000" />
-      <workItem from="1562481704036" duration="12808000" />
+      <workItem from="1562481704036" duration="13475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97110000" />
+    <option name="totallyTimeSpent" value="97777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -440,6 +444,41 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7159864" visible="true" weight="0.13859275" />
+      <window_info id="Structure" order="1" sideWeight="0.2840136" side_tool="true" weight="0.13859275" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.501548" side_tool="true" weight="0.1369936" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4936034" visible="true" weight="0.42203742" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4946695" weight="0.38877338" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
+      <window_info anchor="bottom" id="REST Client" order="7" weight="0.32917964" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5053305" side_tool="true" weight="0.38877338" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49307036" weight="0.32744282" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Stack trace to UML" order="14" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Key Promoter X" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="RestServices" order="10" />
+    </layout>
+    <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7159864" visible="true" weight="0.13859275" />
       <window_info id="Structure" order="1" sideWeight="0.2840136" side_tool="true" visible="true" weight="0.13859275" />
       <window_info id="Designer" order="2" />
@@ -459,41 +498,6 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5053305" side_tool="true" visible="true" weight="0.38877338" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49307036" weight="0.32744282" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Stack trace to UML" order="14" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Key Promoter X" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="RestServices" order="10" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6331269" visible="true" weight="0.1369936" />
-      <window_info id="Structure" order="1" sideWeight="0.36687306" side_tool="true" visible="true" weight="0.1369936" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.501548" side_tool="true" weight="0.1369936" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3271028" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3894081" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.32917964" />
-      <window_info anchor="bottom" id="REST Client" order="7" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3281412" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Stack trace to UML" order="14" side_tool="true" />
@@ -560,7 +564,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java</url>
-          <line>57</line>
+          <line>59</line>
           <properties />
           <option name="timeStamp" value="119" />
         </line-breakpoint>
@@ -575,6 +579,18 @@
           <line>98</line>
           <properties />
           <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="127" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -793,27 +809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/MessagePart/PreCheckMessageImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-          <folding>
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1678#1679#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#1626#1627#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1707#1708#0" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/knightapple/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -828,23 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/tools/MessageResolve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/TempFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -865,22 +847,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/Receiver.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/tools/MessageResolve.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+        <state relative-caret-position="364">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/MessagePart/PreCheckMessageImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="e#1733#1734#0" expanded="true" />
+            <element signature="e#1772#1773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/TempFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5687#5688#0" expanded="true" />
-            <element signature="e#5797#5798#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/knightapple/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="342">
+          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -889,13 +887,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/knightapple/SendPart/Sender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+        <state relative-caret-position="381">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#953#954#0" expanded="true" />
             <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/knightapple/ReceivePart/Receiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5687#5688#0" expanded="true" />
+            <element signature="e#5797#5798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="464">
+            <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+            <folding>
+              <element signature="imports" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

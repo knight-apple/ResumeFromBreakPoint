@@ -9,7 +9,6 @@ import cn.knightapple.tools.MessageResolve;
 
 import java.io.*;
 import java.net.Socket;
-import java.net.SocketAddress;
 
 public class Sender {
     private Socket socket;
@@ -29,11 +28,14 @@ public class Sender {
         socket = new Socket(host, port);
         this.fileName = fileNameFrom;
     }
-    public void setEncryp()
+    public void setEncrypt()
     {
         encryption =true;
     }
-
+    public void setUnEncrypt()
+    {
+        encryption = false;
+    }
     public void send() throws IOException, InterruptedException {
         if (socket == null || fileName == null) {
             throw new IOException("未设置连接或文件名");
@@ -78,7 +80,7 @@ public class Sender {
         try {
             Socket socket = new Socket("localhost", 12345);
             Sender sender = new Sender(socket, "E:\\学习资料\\txt专业类图书\\IT书籍\\1400多篇各类破解文章全中文.chm");
-            sender.setEncryp();
+            sender.setEncrypt();
             sender.send();
         } catch (IOException e) {
             e.printStackTrace();
