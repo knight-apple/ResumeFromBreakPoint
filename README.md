@@ -2,7 +2,7 @@
 
 [![Java](https://img.shields.io/badge/java-1.8-blue.svg)](<https://www.oracle.com/technetwork/java/javase/documentation/jdk8-doc-downloads-2133158.html> )
 
-> #### 基于Java的断点续传中间件
+> #### 基于Java的断点续传组件
 
 ## 概览
 
